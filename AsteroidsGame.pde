@@ -1,16 +1,21 @@
 Spaceship hal = new Spaceship();//your variable declarations here
+Star[] dav = new Star[200];
 public void setup() 
 {
   background(0);
   size(500, 500);
-  for (int i = 0; i < 200; i++)
+  for (int i = 0; i < dav.length; i++)
   {
-    Star dav = new Star();
-    dav.show();
+    dav[i] = new Star();
   }
 }
 public void draw() 
 {
+  background(0);
+  for (int i = 0; i < dav.length; i++)
+  {
+    dav[i].show();
+  }
   hal.move();
   hal.show();
 }
@@ -22,11 +27,11 @@ public void keyPressed()
   }
   if (key == 'a')
   {
-    hal.turn(-2);
+    hal.turn(-5);
   }
   if (key == 'd')
   {
-    hal.turn(2);
+    hal.turn(5);
   }
   if (key == 'w')
   {
