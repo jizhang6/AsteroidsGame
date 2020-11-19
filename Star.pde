@@ -8,8 +8,9 @@ class Star //note that this class does NOT extend Floater
     myColor = color((int)(Math.random()*255));
     mySize = (int)(Math.random()*7);
   }
-  public void show()
+    public void show()
   {
+    stroke(myColor);
     fill(myColor);
     ellipse(myX, myY, mySize, mySize);
   }
