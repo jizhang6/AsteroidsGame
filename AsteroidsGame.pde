@@ -16,7 +16,7 @@ public void draw()
 }
 public void keyPressed()
 {
-  if (key == 'h') 
+  if (key == 's') 
   {
     hal.hyperspace();
   }
