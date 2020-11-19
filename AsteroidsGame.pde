@@ -25,11 +25,11 @@ public void keyPressed()
   {
     hal.hyperspace();
   }
-  if (key == 'a')
+  if (key == 'a') // turn left
   {
     hal.turn(-5);
   }
-  if (key == 'd')
+  if (key == 'd') // turn right
   {
     hal.turn(5);
   }
