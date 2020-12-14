@@ -9,6 +9,7 @@ class Bullet extends Floater{
     accelerate(.6);
   }
   public void show() {
+    fill(myColor);
     ellipse((float)myCenterX, (float) myCenterY, 10, 10);
   }
   
