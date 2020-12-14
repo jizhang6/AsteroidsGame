@@ -5,6 +5,7 @@ class Bullet extends Floater{
     myXspeed = hal.getXspeed();
     myYspeed = hal.getYspeed();
     myPointDirection = hal.getPointDirection();
+    myColor = color(255);
     accelerate(.6);
   }
   public void show() {
